@@ -1,6 +1,6 @@
 {
   "name": "ui-chips",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Stencil Component Starter",
   "main": "dist/index.cjs.js",
   "module": "dist/custom-elements/index.js",
@@ -32,14 +32,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vinhnghi223/uiw-input-number.git"
+    "url": "git+https://github.com/vinhnghi223/ui-chips.git"
   },
   "author": "Nghi Le",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/vinhnghi223/uiw-input-number/issues"
+    "url": "https://github.com/vinhnghi223/ui-chips/issues"
   },
-  "homepage": "https://github.com/vinhnghi223/uiw-input-number",
+  "homepage": "https://github.com/vinhnghi223/ui-chips",
   "keywords": [
     "chip",
     "radio",
