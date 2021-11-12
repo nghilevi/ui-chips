@@ -30,5 +30,24 @@
     "jest-cli": "^26.6.3",
     "puppeteer": "^10.0.0"
   },
-  "license": "MIT"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vinhnghi223/uiw-input-number.git"
+  },
+  "author": "Nghi Le",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vinhnghi223/uiw-input-number/issues"
+  },
+  "homepage": "https://github.com/vinhnghi223/uiw-input-number",
+  "keywords": [
+    "bar",
+    "chart",
+    "input",
+    "input number",
+    "web component",
+    "stencil","stenciljs",
+    "framework agnostic",
+    "angular","react","vue"
+  ]
 }
