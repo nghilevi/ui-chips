@@ -1,3 +1,45 @@
-:host {
+
+.ncc-chips-group {
   display: block;
 }
+.ncc-chips-group .ncc-chip {
+  margin: 0 8px 8px 0;
+}
+.ncc-chips-group .ncc-chip input {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+.ncc-chips-group__header {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+.ncc-chips-group__footer {
+  display: flex;
+  flex-flow: column;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+.ncc-chips-group__optional-label, .ncc-chips-group__hint {
+  color: #5a575c;
+}
+.ncc-chips-group__hint, .ncc-chips-group__error {
+  display: flex;
+  margin-bottom: 4px;
+}
+.ncc-chips-group__error-icon {
+  margin-right: 8px;
+}
+.ncc-chips-group--error .ncc-chips-group__label,
+.ncc-chips-group--error .ncc-chips-group__error-message {
+  color: #e70404;
+}
+

@@ -1,20 +1,4 @@
-<!DOCTYPE html>
-<html dir="ltr" lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
-    <title>Stencil Component Starter</title>
-
-    <script type="module" src="build/ui-chips.esm.js"></script>
-    <script nomodule src="build/ui-chips.js"></script>
-
-  </head>
-  <body>
-    <ui-chips name="sustainability" type="filter"></ui-chips>
-    <ui-chips name="numberOfPurchased" type="choice"></ui-chips>
-
-  </body>
-  <script>
+<!doctype html><html dir="ltr" lang="en"><head> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0"> <title>Stencil Component Starter</title> <script type="module" src="build/ui-chips.esm.js"></script> <script nomodule="" src="build/ui-chips.js"></script> </head> <body> <ui-chips name="sustainability" type="filter"></ui-chips> <ui-chips name="numberOfPurchased" type="choice"></ui-chips> <script>
     // refer to the HTML element
     var sustainabilityOptionsEl = document.getElementsByName('sustainability')[0];
     var numberOfPurchasedOptionsEl = document.getElementsByName('numberOfPurchased')[0];
@@ -34,8 +18,6 @@
     // populate data
     sustainabilityOptionsEl.options = sustainabilityOptions;
     numberOfPurchasedOptionsEl.options = numberOfPurchasedOptions;
-
-    console.log('sustainabilityOptions: ',sustainabilityOptions)
 
     // programatically select item
     sustainabilityOptionsEl.select(2)
@@ -60,5 +42,13 @@
             numberOfPurchasedOptionsEl.select(evt.detail.index)
         }
     })
-  </script>
-</html>
+  </script> <script>
+if ('serviceWorker' in navigator && location.protocol !== 'file:') {
+  // auto-unregister service worker during dev mode
+  navigator.serviceWorker.getRegistration().then(function(registration) {
+  if (registration) {
+    registration.unregister().then(function() { location.reload(true) });
+  }
+  });
+}
+</script></body></html>

@@ -1,4 +1,4 @@
-export { bem, joinClasses, bemFromBlock }
+export { bem }
 
 type ModifierObject = { [mod: string]: any }
 type ClassString = string | (string | undefined | null)[]
@@ -27,25 +27,3 @@ const bem: Bem = (base, ...modifiers) => {
     return out
 }
 
-const joinClasses = (
-    ...classes: (ClassString | null | undefined)[]
-): string => {
-    let out = ''
-
-    for (const cssClass of classes) {
-        if (!cssClass) continue
-
-        const classArray = typeof cssClass === 'string' ? [cssClass] : cssClass
-
-        for (const cssClass of classArray) {
-            if (cssClass) out += ` ${cssClass}`
-        }
-    }
-
-    return out.trim()
-}
-
-const bemFromBlock =
-    (block: string): Bem =>
-    (element, ...modifiers) =>
-        bem(`${block}__${element}`, ...modifiers)

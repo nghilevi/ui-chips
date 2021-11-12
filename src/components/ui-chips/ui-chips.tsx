@@ -4,7 +4,8 @@ import { Option, ClickedOption, SelectedOptions,
     Block, ChipsGroupEvent, ChipsGroupType, ChipsGroupKey } from './ui-chips-type'
 
 @Component({
-  tag: 'ui-chips'
+  tag: 'ui-chips',
+  styleUrl: 'ui-chips.css',
 })
 export class UiChips {
 
@@ -43,6 +44,10 @@ export class UiChips {
 
       this.clickedOption = this.createClickedOption(index);
       this.emit(ChipsGroupEvent.ONCHANGE, index);
+  }
+
+  componentWillRender(){
+      console.log('this.options: ',this.options)
   }
 
   // EVENTS HANDLINGS
@@ -118,7 +123,7 @@ export class UiChips {
               )}
 
               <div role={this.type === ChipsGroupType.CHOICE ? 'radiogroup' : 'group'}>
-                  {this.options}
+                  
               {this.options.map( (option, index) => {
                   return ([
                       /* TODO we may want use a separate chip component instead */
