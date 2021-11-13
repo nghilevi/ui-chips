@@ -29,7 +29,7 @@
         selectedItemEl.innerHTML = JSON.stringify(evt.detail);
     });
 
-    // conditionally select a chip (remember to set selectable="false" on &lt;nwcc-chips-group /&gt; component)
+    // conditionally select a chip (remember to set selectable="false" on &lt;Uiw-chips-group /&gt; component)
     document.addEventListener('uiChipsClick', function (evt) {
         if (evt.detail.groupName !== 'numberOfPurchased') {
             return
