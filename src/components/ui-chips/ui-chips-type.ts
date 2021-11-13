@@ -17,8 +17,8 @@ interface SelectedOptions {
 }
 
 enum Block {
-    CHIP = 'ncc-chip',
-    CHIPS_GROUP = 'ncc-chips-group',
+    CHIP = 'uiw-chip',
+    CHIPS_GROUP = 'uiw-chips-group',
 }
 
 enum ChipsGroupEvent {

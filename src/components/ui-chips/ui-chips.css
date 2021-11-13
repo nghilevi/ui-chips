@@ -5,7 +5,7 @@
  *      a new variable and deprecating the old one
  *  - variables still help devs to use the common breakpoints
  */
- .ncc-chip {
+ .uiw-chip {
     position: relative;
     margin: 0;
     cursor: pointer;
@@ -26,54 +26,54 @@
     outline: none;
     min-width: 44px;
   }
-  .ncc-chip__close {
+  .uiw-chip__close {
     padding-left: 8px;
     color: #5a575c;
   }
-  .ncc-chip__close path {
+  .uiw-chip__close path {
     fill: #5a575c;
   }
-  .ncc-chip:hover {
+  .uiw-chip:hover {
     color: #0000a0;
   }
-  .ncc-chip:hover .ncc-chip__close path {
+  .uiw-chip:hover .uiw-chip__close path {
     fill: #0000a0;
   }
-  .ncc-chip:focus {
+  .uiw-chip:focus {
     box-shadow: 0 0 0 2px #aed5ff;
   }
-  .ncc-chip__label {
+  .uiw-chip__label {
     display: flex;
     align-items: center;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
   }
-  .ncc-chip--with-space {
+  .uiw-chip--with-space {
     margin: 0 8px 8px 0;
   }
-  .ncc-chip--selected {
+  .uiw-chip--selected {
     background-color: #dcedff;
     color: #0000a0;
   }
-  .ncc-chip--selected .ncc-chip__close path {
+  .uiw-chip--selected .uiw-chip__close path {
     fill: #0000a0;
   }
-  .ncc-chip--disabled {
+  .uiw-chip--disabled {
     pointer-events: none;
     color: #8b8a8d;
   }
-  .ncc-chip--disabled .ncc-chip__close path {
+  .uiw-chip--disabled .uiw-chip__close path {
     fill: #8b8a8d;
   }
-  .ncc-chip .ncc-svg-container {
+  .uiw-chip .uiw-svg-container {
     margin: 0 8px 0 0;
   }
-  .ncc-chip .ncc-chip__close .ncc-svg-container {
+  .uiw-chip .uiw-chip__close .uiw-svg-container {
     margin: 0;
   }
   
-  .ncc-chip:before {
+  .uiw-chip:before {
     /* touch area increase */
     content: "";
     position: absolute;
@@ -84,65 +84,65 @@
   }
   
   @media (prefers-color-scheme: dark) {
-    .ncc-enable-dark-mode .ncc-chip {
+    .uiw-enable-dark-mode .uiw-chip {
       background-color: #383838;
       color: #c9c7c7;
     }
-    .ncc-enable-dark-mode .ncc-chip__close path {
+    .uiw-enable-dark-mode .uiw-chip__close path {
       fill: #c9c7c7;
     }
-    .ncc-enable-dark-mode .ncc-chip:hover {
+    .uiw-enable-dark-mode .uiw-chip:hover {
       color: #aed5ff;
     }
-    .ncc-enable-dark-mode .ncc-chip:hover .ncc-chip__close path {
+    .uiw-enable-dark-mode .uiw-chip:hover .uiw-chip__close path {
       fill: #aed5ff;
     }
-    .ncc-enable-dark-mode .ncc-chip:focus {
+    .uiw-enable-dark-mode .uiw-chip:focus {
       box-shadow: 0 0 0 2px #83b8ed;
     }
-    .ncc-enable-dark-mode .ncc-chip--selected {
+    .uiw-enable-dark-mode .uiw-chip--selected {
       background-color: #5a575c;
       color: #aed5ff;
     }
-    .ncc-enable-dark-mode .ncc-chip--selected .ncc-chip__close path {
+    .uiw-enable-dark-mode .uiw-chip--selected .uiw-chip__close path {
       fill: #aed5ff;
     }
-    .ncc-enable-dark-mode .ncc-chip--disabled {
+    .uiw-enable-dark-mode .uiw-chip--disabled {
       background-color: #383838;
       color: #8b8a8d;
     }
-    .ncc-enable-dark-mode .ncc-chip--disabled .ncc-chip__close path {
+    .uiw-enable-dark-mode .uiw-chip--disabled .uiw-chip__close path {
       fill: #8b8a8d;
     }
   }
-  .ncc-enforce-dark-mode .ncc-chip {
+  .uiw-enforce-dark-mode .uiw-chip {
     background-color: #383838;
     color: #c9c7c7;
   }
-  .ncc-enforce-dark-mode .ncc-chip__close path {
+  .uiw-enforce-dark-mode .uiw-chip__close path {
     fill: #c9c7c7;
   }
-  .ncc-enforce-dark-mode .ncc-chip:hover {
+  .uiw-enforce-dark-mode .uiw-chip:hover {
     color: #aed5ff;
   }
-  .ncc-enforce-dark-mode .ncc-chip:hover .ncc-chip__close path {
+  .uiw-enforce-dark-mode .uiw-chip:hover .uiw-chip__close path {
     fill: #aed5ff;
   }
-  .ncc-enforce-dark-mode .ncc-chip:focus {
+  .uiw-enforce-dark-mode .uiw-chip:focus {
     box-shadow: 0 0 0 2px #83b8ed;
   }
-  .ncc-enforce-dark-mode .ncc-chip--selected {
+  .uiw-enforce-dark-mode .uiw-chip--selected {
     background-color: #5a575c;
     color: #aed5ff;
   }
-  .ncc-enforce-dark-mode .ncc-chip--selected .ncc-chip__close path {
+  .uiw-enforce-dark-mode .uiw-chip--selected .uiw-chip__close path {
     fill: #aed5ff;
   }
-  .ncc-enforce-dark-mode .ncc-chip--disabled {
+  .uiw-enforce-dark-mode .uiw-chip--disabled {
     background-color: #383838;
     color: #8b8a8d;
   }
-  .ncc-enforce-dark-mode .ncc-chip--disabled .ncc-chip__close path {
+  .uiw-enforce-dark-mode .uiw-chip--disabled .uiw-chip__close path {
     fill: #8b8a8d;
   }
   
@@ -156,13 +156,13 @@
  *  - variables still help devs to use the common breakpoints
  */
 /* hide chip group input */
-.ncc-chips-group {
+.uiw-chips-group {
   display: block;
 }
-.ncc-chips-group .ncc-chip {
+.uiw-chips-group .uiw-chip {
   margin: 0 8px 8px 0;
 }
-.ncc-chips-group .ncc-chip input {
+.uiw-chips-group .uiw-chip input {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   height: 1px;
@@ -171,7 +171,7 @@
   white-space: nowrap;
   width: 1px;
 }
-.ncc-chips-group__header {
+.uiw-chips-group__header {
   display: flex;
   flex-flow: row;
   justify-content: space-between;
@@ -179,24 +179,24 @@
   font-size: 0.875rem;
   line-height: 1.25rem;
 }
-.ncc-chips-group__footer {
+.uiw-chips-group__footer {
   display: flex;
   flex-flow: column;
   font-size: 0.875rem;
   line-height: 1.25rem;
 }
-.ncc-chips-group__optional-label, .ncc-chips-group__hint {
+.uiw-chips-group__optional-label, .uiw-chips-group__hint {
   color: #5a575c;
 }
-.ncc-chips-group__hint, .ncc-chips-group__error {
+.uiw-chips-group__hint, .uiw-chips-group__error {
   display: flex;
   margin-bottom: 4px;
 }
-.ncc-chips-group__error-icon {
+.uiw-chips-group__error-icon {
   margin-right: 8px;
 }
-.ncc-chips-group--error .ncc-chips-group__label,
-.ncc-chips-group--error .ncc-chips-group__error-message {
+.uiw-chips-group--error .uiw-chips-group__label,
+.uiw-chips-group--error .uiw-chips-group__error-message {
   color: #e70404;
 }
 

@@ -44,7 +44,7 @@ $fonts: (
 
 $weights: ('light', 'regular', 'medium', 'bold', 'boldest');
 
-@mixin ncc-font-weight($weight) {
+@mixin uiw-font-weight($weight) {
     @if $weight == nth($weights, 1) {
         font-weight: $font-weight-light;
     } @else if $weight == nth($weights, 2) {
@@ -58,7 +58,7 @@ $weights: ('light', 'regular', 'medium', 'bold', 'boldest');
     }
 }
 
-@mixin ncc-font($size, $weight) {
+@mixin uiw-font($size, $weight) {
     @if $size == nth($fonts, 1) {
         font-size: $font-size-small;
         line-height: $line-height-small;
@@ -86,5 +86,5 @@ $weights: ('light', 'regular', 'medium', 'bold', 'boldest');
     }
 
     // font-weights
-    @include ncc-font-weight($weight);
+    @include uiw-font-weight($weight);
 }
