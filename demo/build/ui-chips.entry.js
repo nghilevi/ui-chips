@@ -1,4 +1,4 @@
-import { r as registerInstance, e as createEvent, h, f as Host } from './index-d25185d3.js';
+import { r as registerInstance, e as createEvent, h, f as Host } from './index-1adcca83.js';
 
 const bem = (base, ...modifiers) => {
   // "base" is either just a "block", or a "block__element" string
